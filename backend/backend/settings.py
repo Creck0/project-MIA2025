@@ -1,4 +1,8 @@
 from pathlib import Path
+import os
+import urllib.parse
+from dotenv import load_dotenv
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -48,11 +52,41 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-DATABASES = {
-    'default': {
+def _get_database_config_from_env():
+    # Prefer full DATABASE_URL (e.g. postgres://user:pass@host:port/dbname)
+    db_url = os.environ.get('DATABASE_URL')
+    if db_url:
+        parsed = urllib.parse.urlparse(db_url)
+        engine = 'django.db.backends.postgresql'
+        return {
+            'ENGINE': engine,
+            'NAME': parsed.path[1:],
+            'USER': urllib.parse.unquote(parsed.username) if parsed.username else '',
+            'PASSWORD': urllib.parse.unquote(parsed.password) if parsed.password else '',
+            'HOST': parsed.hostname or '',
+            'PORT': parsed.port or '',
+        }
+
+    # Fall back to individual env vars for Postgres
+    if os.environ.get('POSTGRES_DB'):
+        return {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.environ.get('POSTGRES_DB', 'web_umkm'),
+            'USER': os.environ.get('POSTGRES_USER', 'web_umkm_user'),
+            'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'strongpassword'),
+            'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
+            'PORT': os.environ.get('POSTGRES_PORT', '5432'),
+        }
+
+    # Default to sqlite
+    return {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+
+
+DATABASES = {
+    'default': _get_database_config_from_env()
 }
 
 AUTH_PASSWORD_VALIDATORS = []
