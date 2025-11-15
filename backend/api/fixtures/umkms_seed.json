@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Fettbite Hotdog Cart",
+    "category": "food",
+    "description": "Warung keluarga yang menyajikan masakan tradisional dengan resep turun-temurun.",
+    "address": "Jl. Merdeka No.12, Kota Contoh",
+    "phone": "",
+    "email": "",
+    "images": ["/public/vite.svg", "/src/assets/react.svg"]
+  },
+  {
+    "name": "Kopi & Co",
+    "category": "drink",
+    "description": "Kedai kopi lokal dengan biji panggang sendiri dan suasana nyaman untuk bekerja.",
+    "address": "Jl. Kopi No.5, Kecamatan Kopi",
+    "phone": "",
+    "email": "",
+    "images": ["/src/assets/react.svg"]
+  },
+  {
+    "name": "Jasa Cuci Kilat Bersih",
+    "category": "service",
+    "description": "Layanan laundry cepat dengan pengantaran antar-jemput.",
+    "address": "Kompleks Niaga Blok A, Kota Contoh",
+    "phone": "",
+    "email": "",
+    "images": []
+  },
+  {
+    "name": "Warung Bu Lia",
+    "category": "food",
+    "description": "Warung makan sederhana dengan rasa yang tidak sederhana.",
+    "address": "Jl. Jombang No.28, Gading Kasri, Kecamatan Klojen",
+    "phone": "",
+    "email": "",
+    "images": ["/src/assets/WarungBuLia.jpeg"]
+  },
+  {
+    "name": "Nakoa Cafe Bondowoso",
+    "category": "drink",
+    "description": "Warung makan sederhana dengan rasa yang tidak sederhana.",
+    "address": "Jl. Bondowoso No.14, Gading Kasri, Kecamatan Klojen",
+    "phone": "",
+    "email": "",
+    "images": ["/src/assets/Nakoa.jpeg"]
+  },
+  {
+    "name": "Jenderal Besar Naufal Arya Pradipta",
+    "category": "service",
+    "description": "Tempat persemayaman sepuh yang menyediakan banyak macam jasa seperti joki skripsi, ketua organisasi, penggerak masyarakat, dsb.",
+    "address": "Jl. Bunga Merak II No.22, Jatimulyo, Kecamatan Lowokwaru",
+    "phone": "",
+    "email": "",
+    "images": ["/src/assets/CTF.jpg"]
+  }
+]

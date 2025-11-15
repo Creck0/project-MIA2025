@@ -1,0 +1,181 @@
+[
+{
+  "model": "api.umkm",
+  "pk": 3,
+  "fields": {
+    "name": "Kerajinan Bambu Sentosa",
+    "category": "drink",
+    "description": "Usaha kerajinan bambu yang memproduksi peralatan rumah tangga.",
+    "address": "Jl. Anyelir No. 3, Yogyakarta",
+    "phone": "+628987654321",
+    "email": "bambu@example.com",
+    "images": [],
+    "latitude": null,
+    "longitude": null,
+    "created_at": "2025-11-01T09:25:16.535Z",
+    "updated_at": "2025-11-01T10:25:16.070Z"
+  }
+},
+{
+  "model": "api.umkm",
+  "pk": 5,
+  "fields": {
+    "name": "Kopi & Co",
+    "category": "drink",
+    "description": "Kedai kopi lokal dengan biji panggang sendiri dan suasana nyaman untuk bekerja.",
+    "address": "Jl. Kopi No.5, Kecamatan Kopi",
+    "phone": "",
+    "email": "",
+    "images": [
+      "/src/assets/react.svg"
+    ],
+    "latitude": null,
+    "longitude": null,
+    "created_at": "2025-11-01T10:28:44.194Z",
+    "updated_at": "2025-11-01T10:28:44.194Z"
+  }
+},
+{
+  "model": "api.umkm",
+  "pk": 6,
+  "fields": {
+    "name": "Jasa Cuci Kilat Bersih",
+    "category": "service",
+    "description": "Layanan laundry cepat dengan pengantaran antar-jemput.",
+    "address": "Kompleks Niaga Blok A, Kota Contoh",
+    "phone": "",
+    "email": "",
+    "images": [],
+    "latitude": null,
+    "longitude": null,
+    "created_at": "2025-11-01T10:28:44.197Z",
+    "updated_at": "2025-11-01T10:28:44.197Z"
+  }
+},
+{
+  "model": "api.umkm",
+  "pk": 7,
+  "fields": {
+    "name": "Warung Bu Lia",
+    "category": "food",
+    "description": "Warung makan sederhana dengan rasa yang tidak sederhana.",
+    "address": "Jl. Jombang No.28, Gading Kasri, Kecamatan Klojen",
+    "phone": "",
+    "email": "",
+    "images": [
+      "/src/assets/WarungBuLia.jpeg"
+    ],
+    "latitude": null,
+    "longitude": null,
+    "created_at": "2025-11-01T10:28:44.199Z",
+    "updated_at": "2025-11-01T10:28:44.199Z"
+  }
+},
+{
+  "model": "api.umkm",
+  "pk": 8,
+  "fields": {
+    "name": "Nakoa Cafe Bondowoso",
+    "category": "drink",
+    "description": "Warung makan sederhana dengan rasa yang tidak sederhana.",
+    "address": "Jl. Bondowoso No.14, Gading Kasri, Kecamatan Klojen",
+    "phone": "",
+    "email": null,
+    "images": [
+      "/src/assets/Nakoa.jpeg"
+    ],
+    "latitude": null,
+    "longitude": null,
+    "created_at": "2025-11-01T10:28:44.201Z",
+    "updated_at": "2025-11-01T12:09:14.181Z"
+  }
+},
+{
+  "model": "api.umkm",
+  "pk": 9,
+  "fields": {
+    "name": "Jenderal Besar Adhitya",
+    "category": "service",
+    "description": "Tempat persemayaman sepuh yang menyediakan banyak macam jasa seperti joki skripsi, ketua organisasi, penggerak masyarakat, dsb.",
+    "address": "Jl. Bunga Merak II No.22, Jatimulyo, Kecamatan Lowokwaru",
+    "phone": "",
+    "email": null,
+    "images": [
+      "/src/assets/CTF.jpg"
+    ],
+    "latitude": null,
+    "longitude": null,
+    "created_at": "2025-11-01T10:28:44.203Z",
+    "updated_at": "2025-11-01T11:15:15.670Z"
+  }
+},
+{
+  "model": "api.umkm",
+  "pk": 10,
+  "fields": {
+    "name": "Teh Gacor",
+    "category": "drink",
+    "description": "gacor kang",
+    "address": "",
+    "phone": "",
+    "email": null,
+    "images": [],
+    "latitude": null,
+    "longitude": null,
+    "created_at": "2025-11-01T10:52:26.048Z",
+    "updated_at": "2025-11-01T10:52:26.048Z"
+  }
+},
+{
+  "model": "api.umkm",
+  "pk": 11,
+  "fields": {
+    "name": "Makanan",
+    "category": "food",
+    "description": "",
+    "address": "",
+    "phone": "",
+    "email": null,
+    "images": [],
+    "latitude": null,
+    "longitude": null,
+    "created_at": "2025-11-01T12:02:47.563Z",
+    "updated_at": "2025-11-01T12:02:47.563Z"
+  }
+},
+{
+  "model": "api.umkm",
+  "pk": 12,
+  "fields": {
+    "name": "makanan lagi",
+    "category": "food",
+    "description": "",
+    "address": "",
+    "phone": "",
+    "email": null,
+    "images": [],
+    "latitude": null,
+    "longitude": null,
+    "created_at": "2025-11-01T12:03:21.114Z",
+    "updated_at": "2025-11-01T12:03:21.114Z"
+  }
+},
+{
+  "model": "api.umkmimage",
+  "pk": 3,
+  "fields": {
+    "umkm": 9,
+    "image": "umkm_images/Screenshot_2025-10-26_111055.jpg",
+    "uploaded_at": "2025-11-01T11:15:15.673Z"
+  }
+},
+{
+  "model": "api.umkmimage",
+  "pk": 4,
+  "fields": {
+    "umkm": 8,
+    "image": "umkm_images/Nakoa.jpeg",
+    "uploaded_at": "2025-11-01T12:09:14.183Z"
+  }
+}
+]
