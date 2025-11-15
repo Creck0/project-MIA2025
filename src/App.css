@@ -1,54 +1,148 @@
+/* ======================================
+   GLOBAL FONT
+====================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======================================
+   OVERRIDE #root AGAR TIDAK GESER KIRI
+====================================== */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ======================================
+   DASHBOARD BACKGROUND (FULL CENTER)
+====================================== */
+.dashboard-bg {
+  min-height: 100vh;
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  background-image: url("/assets/umkm/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  text-align: center !important;
+}
+
+/* dark overlay */
+.dashboard-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+/* ======================================
+   GLASS BOX (CENTER)
+====================================== */
+.dashboard-box {
+  position: relative;
+  z-index: 5;
+
+  width: 75%;
+  max-width: 780px;
+
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(18px);
+
+  padding: 60px 50px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
   text-align: center;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.45);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ======================================
+   TITLE + FONT BRIGHTER
+====================================== */
+.dashboard-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+
+  /* WARNA FON LEBIH TERANG */
+  color: rgb(255, 255, 255);
+
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
+  margin-bottom: 22px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ======================================
+   DESCRIPTION (BRIGHT + CLEAR)
+====================================== */
+.dashboard-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: rgb(235, 235, 235);   /* lebih terang & mudah dibaca */
+  line-height: 1.7;
+  opacity: 0.95;
+
+  max-width: 620px;
+  margin: 0 auto 40px auto;
+}
+
+/* ======================================
+   BUTTON MODERN
+====================================== */
+.dashboard-btn {
+  padding: 15px 45px;
+  font-size: 20px;
+  font-weight: 600;
+
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #ffffff, #ffe69b);
+  color: #111;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: 0.2s ease;
+}
+
+.dashboard-btn:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #fff, #f9d97f);
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+@media (max-width: 768px) {
+  .dashboard-box {
+    width: 90%;
+    padding: 45px 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dashboard-title {
+    font-size: 36px;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .dashboard-desc {
+    font-size: 17px;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-header {
-  margin-bottom: 1rem;
-}
-main {
-  padding: 1rem;
-}
-
-body {
-  background: #f8fafc;
-  color: #0f172a;
+  .dashboard-btn {
+    padding: 14px 35px;
+    font-size: 18px;
+  }
 }
